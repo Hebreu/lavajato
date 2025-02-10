@@ -1,0 +1,158 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background: url('car-wash.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.services, .promotions, .gallery, .testimonials, .about, .contact {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.services h2, .promotions h2, .gallery h2, .testimonials h2, .about h2, .contact h2 {
+    margin-bottom: 40px;
+}
+
+.service-list, .promo-list, .testimonial-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-item, .promo-item, .testimonial-item {
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.price {
+    color: #ff6600;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+
+/* Estilos para as publicações com imagens */
+.publications {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.publication-item {
+    background: rgba(255, 255, 255, 0.9); /* Fundo semi-transparente */
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 45%;
+    text-align: center;
+    overflow: hidden; /* Para garantir que as bordas arredondadas funcionem */
+}
+
+.publication-item img {
+    width: 100%;
+    border-radius: 10px 10px 0 0; /* Bordas arredondadas apenas no topo */
+    margin-bottom: 15px;
+}
+
+.publication-item h3 {
+    color: #ff6600;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.publication-item p {
+    font-size: 0.9em;
+    color: #333;
+    margin-bottom: 15px;
+}
